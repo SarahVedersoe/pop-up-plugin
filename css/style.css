@@ -1,0 +1,68 @@
+#popup {
+    border: 7px solid grey;
+    width: 424px;
+    height: 510px;  
+}
+
+
+#p {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 370px;
+    line-height: 28px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    animation-name: ZoomIn;
+    animation-duration: 3s;
+   
+}
+
+#animationsigte { 
+    animation-iteration-count: infinite;
+}
+
+#koglejagtenh {
+    padding: 0;
+    margin-bottom: -100px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 27px;
+    letter-spacing: 5px;
+    font-family: 'Anton', sans-serif;
+    animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s;
+}
+
+#popupbutton {
+    font-size: 30px;
+    margin-bottom: -40px;
+    margin-left: 5px;
+}
+
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+
+@keyframes ZoomIn{
+  from {
+   transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
